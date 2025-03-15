@@ -32,7 +32,7 @@ const Navbar = () => {
               Our Team
             </button>
             <Link to="/" className="text-gray-700 hover:text-navy">Job Seekers</Link>
-            <Link to="/" className="text-gray-700 hover:text-navy">Talent Hub</Link>
+            <Link to="/talent-hub" className="text-gray-700 hover:text-navy">Talent Hub</Link>
             <Link
               to="/contact"
               className="bg-baby-blue text-white px-4 py-2 rounded-md hover:bg-navy transition-colors"
@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-navy">
                 Job Seekers
               </Link>
-              <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-navy">
+              <Link to="/talent-hub" className="block px-3 py-2 text-gray-700 hover:text-navy">
                 Talent Hub
               </Link>
               <Link
