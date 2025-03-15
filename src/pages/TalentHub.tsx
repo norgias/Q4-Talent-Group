@@ -1,27 +1,9 @@
 import React from 'react';
 import { Building2, Users, BookOpen, Rocket, ArrowRight } from 'lucide-react';
 
-function App() {
+function TalentHub() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="bg-white shadow-sm fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <Building2 className="h-8 w-8 text-baby-blue" />
-              <span className="ml-2 text-xl font-bold text-navy">Q4 Talent Group</span>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-baby-blue">Home</a>
-              <a href="#" className="text-gray-700 hover:text-baby-blue">Services</a>
-              <a href="#" className="text-gray-700 hover:text-baby-blue">About</a>
-              <a href="#" className="text-gray-700 hover:text-baby-blue">Contact</a>
-            </nav>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="pt-16 bg-gradient-to-r from-white via-baby-blue to-navy text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -85,52 +67,8 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-navy text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center">
-                <Building2 className="h-8 w-8 text-baby-blue" />
-                <span className="ml-2 text-xl font-bold">Q4 Talent Group</span>
-              </div>
-              <p className="mt-4 text-gray-300">
-                Empowering companies to build exceptional sales teams.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Company</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white">About</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Careers</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white">Blog</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Case Studies</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Guides</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white">Privacy</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Terms</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Cookie Policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
-            <p>&copy; {new Date().getFullYear()} Q4 Talent Group. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
 
-export default App;
+export default TalentHub;
