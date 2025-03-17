@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import TalentHub from './pages/TalentHub';
+import AskAQuestion from './pages/AskAQuestion';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/talent-hub" element={<TalentHub />} />
+          <Route path="/ask-a-question" element={<AskAQuestion />} />
         </Routes>
         <Footer />
       </div>
