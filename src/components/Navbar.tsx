@@ -1,19 +1,43 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, Building2, ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showJobSeekersDropdown, setShowJobSeekersDropdown] = useState(false);
   const [showMobileJobSeekersDropdown, setShowMobileJobSeekersDropdown] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
     setIsOpen(false);
+    
+    // Check if we're already on the home page
+    if (location.pathname === '/') {
+      // If on home page, just scroll to the section
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on another page, navigate to home page with the section hash
+      navigate(`/#${id}`);
+    }
   };
+
+  // Handle scrolling to section when URL has a hash
+  useEffect(() => {
+    if (location.hash && location.pathname === '/') {
+      const id = location.hash.substring(1); // Remove the # character
+      const element = document.getElementById(id);
+      if (element) {
+        // Add a small delay to ensure the page has loaded
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
