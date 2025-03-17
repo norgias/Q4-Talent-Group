@@ -76,7 +76,7 @@ const Navbar = () => {
                   <Link to="/job-board" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
                     Job Board
                   </Link>
-                  <Link to="/ask-question" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
+                  <Link to="/ask-a-question" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
                     Ask A Question
                   </Link>
                   <Link to="/wish-list" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
@@ -129,7 +129,7 @@ const Navbar = () => {
                     <Link to="/job-board" className="block px-3 py-2 text-gray-700 hover:text-navy">
                       Job Board
                     </Link>
-                    <Link to="/ask-question" className="block px-3 py-2 text-gray-700 hover:text-navy">
+                    <Link to="/ask-a-question" className="block px-3 py-2 text-gray-700 hover:text-navy">
                       Ask A Question
                     </Link>
                     <Link to="/wish-list" className="block px-3 py-2 text-gray-700 hover:text-navy">
