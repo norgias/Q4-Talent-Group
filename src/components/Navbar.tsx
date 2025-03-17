@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Building2 } from 'lucide-react';
+import { Menu, X, Building2, ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showJobSeekersDropdown, setShowJobSeekersDropdown] = useState(false);
+  const [showMobileJobSeekersDropdown, setShowMobileJobSeekersDropdown] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -31,7 +33,29 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('team')} className="text-gray-700 hover:text-navy">
               Our Team
             </button>
-            <Link to="/" className="text-gray-700 hover:text-navy">Job Seekers</Link>
+            <div 
+              className="relative"
+              onMouseEnter={() => setShowJobSeekersDropdown(true)}
+              onMouseLeave={() => setShowJobSeekersDropdown(false)}
+            >
+              <button className="flex items-center text-gray-700 hover:text-navy">
+                Job Seekers
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              {showJobSeekersDropdown && (
+                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
+                  <Link to="/job-board" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
+                    Job Board
+                  </Link>
+                  <Link to="/ask-question" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
+                    Ask A Question
+                  </Link>
+                  <Link to="/wish-list" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
+                    Wish List
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link to="/talent-hub" className="text-gray-700 hover:text-navy">Talent Hub</Link>
             <Link
               to="/contact"
@@ -63,9 +87,28 @@ const Navbar = () => {
               >
                 Our Team
               </button>
-              <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-navy">
-                Job Seekers
-              </Link>
+              <div>
+                <button
+                  onClick={() => setShowMobileJobSeekersDropdown(!showMobileJobSeekersDropdown)}
+                  className="flex items-center justify-between px-3 py-2 text-gray-700 hover:text-navy w-full text-left"
+                >
+                  Job Seekers
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                {showMobileJobSeekersDropdown && (
+                  <div className="pl-6 space-y-1">
+                    <Link to="/job-board" className="block px-3 py-2 text-gray-700 hover:text-navy">
+                      Job Board
+                    </Link>
+                    <Link to="/ask-question" className="block px-3 py-2 text-gray-700 hover:text-navy">
+                      Ask A Question
+                    </Link>
+                    <Link to="/wish-list" className="block px-3 py-2 text-gray-700 hover:text-navy">
+                      Wish List
+                    </Link>
+                  </div>
+                )}
+              </div>
               <Link to="/talent-hub" className="block px-3 py-2 text-gray-700 hover:text-navy">
                 Talent Hub
               </Link>
