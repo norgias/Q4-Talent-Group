@@ -5,7 +5,7 @@ function TalentHub() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-r from-baby-blue/40 via-baby-blue to-navy text-white">
+      <section className="bg-gradient-to-r from-baby-blue to-navy text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-6">Q4 Talent Group</h1>
