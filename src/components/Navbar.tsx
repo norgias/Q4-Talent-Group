@@ -58,16 +58,21 @@ const Navbar = () => {
               Our Team
             </button>
             <div 
-              className="relative"
-              onMouseEnter={() => setShowJobSeekersDropdown(true)}
-              onMouseLeave={() => setShowJobSeekersDropdown(false)}
+              className="relative group"
             >
-              <button className="flex items-center text-gray-700 hover:text-navy">
+              <button 
+                className="flex items-center text-gray-700 hover:text-navy"
+                onMouseEnter={() => setShowJobSeekersDropdown(true)}
+              >
                 Job Seekers
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {showJobSeekersDropdown && (
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
+                <div 
+                  className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10"
+                  onMouseEnter={() => setShowJobSeekersDropdown(true)}
+                  onMouseLeave={() => setShowJobSeekersDropdown(false)}
+                >
                   <Link to="/job-board" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
                     Job Board
                   </Link>
