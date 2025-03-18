@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link to="/talent-hub" className="text-gray-700 hover:text-navy">Talent Hub</Link>
             <Link
               to="/contact"
-              className="bg-baby-blue text-white px-4 py-2 rounded-md hover:bg-navy transition-colors"
+              className="bg-navy text-white px-4 py-2 rounded-md hover:bg-baby-blue transition-colors"
             >
               Get in Touch
             </Link>
