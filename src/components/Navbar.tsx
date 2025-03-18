@@ -143,7 +143,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/contact"
-                className="block px-3 py-2 bg-baby-blue text-white rounded-md hover:bg-navy transition-colors"
+                className="block px-3 py-2 bg-navy text-white rounded-md hover:bg-baby-blue transition-colors"
               >
                 Get in Touch
               </Link>
