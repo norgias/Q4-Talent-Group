@@ -31,7 +31,7 @@ function TalentHub() {
               <p className="text-gray-600 mb-6">
                 A free resource for companies looking for hiring insights, best practices, and foundational tools to build a strong sales & GTM hiring strategy.
               </p>
-              <button className="w-full bg-baby-blue text-white py-3 px-6 rounded-md hover:bg-navy transition-colors font-semibold flex items-center justify-center">
+              <button className="w-full bg-navy text-white py-3 px-6 rounded-md hover:bg-baby-blue transition-colors font-semibold flex items-center justify-center">
                 Free Access! <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </div>
@@ -45,7 +45,7 @@ function TalentHub() {
               <p className="text-gray-600 mb-6">
                 Premium recruiting support, personalized hiring plans and full service talent acquisition to help you build winning teams.
               </p>
-              <button className="w-full bg-baby-blue text-white py-3 px-6 rounded-md hover:bg-navy transition-colors font-semibold flex items-center justify-center">
+              <button className="w-full bg-navy text-white py-3 px-6 rounded-md hover:bg-baby-blue transition-colors font-semibold flex items-center justify-center">
                 Learn More! <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </div>
