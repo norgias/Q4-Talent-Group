@@ -144,7 +144,7 @@ const HomePage = () => {
           <div className="text-center">
             <Link
               to="/contact"
-              className="inline-block bg-baby-blue text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-navy transition-colors"
+              className="inline-block bg-navy text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-baby-blue transition-colors"
             >
               Book an Appointment
             </Link>
