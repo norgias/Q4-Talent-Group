@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import TalentHub from './pages/TalentHub';
 import AskAQuestion from './pages/AskAQuestion';
+import WishList from './pages/WishList';
 import Footer from './components/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/talent-hub" element={<TalentHub />} />
           <Route path="/ask-a-question" element={<AskAQuestion />} />
+          <Route path="/wish-list" element={<WishList />} />
         </Routes>
         <Footer />
       </div>
