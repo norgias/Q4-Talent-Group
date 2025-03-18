@@ -38,10 +38,10 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-navy mb-4">
             Have a job-related question or have something specific on your mind?
           </h1>
-          <h2 className="text-xl text-gray-600">
+          <h2 className="text-xl text-navy">
             We're here to help! Fill out the form below and we'll respond as quickly as possible.
           </h2>
         </div>
@@ -161,7 +161,7 @@ function App() {
             <div>
               <button
                 type="submit"
-                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-navy hover:bg-baby-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Submit
               </button>
