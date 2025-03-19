@@ -122,22 +122,24 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-center">
-  <div className="flex flex-col items-center">
-    <CheckCircle className="h-6 w-6 text-baby-blue mb-4" />
-    <div className="text-center">
-      <h3 className="text-xl font-semibold mb-2">Industry Expertise</h3>
-      <p className="text-gray-600">Deep understanding of tech sales and GTM strategies</p>
-    </div>
-  </div>
-  <div className="flex flex-col items-center">
-    <Target className="h-6 w-6 text-baby-blue mb-4" />
-    <div className="text-center">
-      <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
-      <p className="text-gray-600">Consistent success in placing top-tier talent</p>
-    </div>
-  </div>
-</div>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-center">
+            <div className="flex flex-col items-center">
+              <CheckCircle className="h-6 w-6 text-baby-blue mb-4" />
+              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-2">Industry Expertise</h3>
+                <p className="text-gray-600">Deep understanding of tech sales and GTM strategies</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center">
+              <Target className="h-6 w-6 text-baby-blue mb-4" />
+              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
+                <p className="text-gray-600">Consistent success in placing top-tier talent</p>
+              </div>
+            </div>
+          </div>
           <div className="text-center">
             <Link
               to="/contact"
@@ -166,14 +168,14 @@ const HomePage = () => {
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
-  <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-    <p className="text-lg text-gray-600 mb-6">{testimonial.text}</p>
-    <div className="text-center">
-      <p className="font-semibold text-navy">{testimonial.author}</p>
-      <p className="text-gray-500">{testimonial.position}</p>
-    </div>
-  </div>
-</SwiperSlide>
+                <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+                  <p className="text-lg text-gray-600 mb-6">{testimonial.text}</p>
+                  <div className="text-center">
+                    <p className="font-semibold text-navy">{testimonial.author}</p>
+                    <p className="text-gray-500">{testimonial.position}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>
