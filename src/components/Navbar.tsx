@@ -73,7 +73,7 @@ const Navbar = () => {
                   onMouseEnter={() => setShowJobSeekersDropdown(true)}
                   onMouseLeave={() => setShowJobSeekersDropdown(false)}
                 >
-                  <Link to="/job-board" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
+                  <Link to="/jobs" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
                     Job Board
                   </Link>
                   <Link to="/ask-a-question" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-navy">
@@ -126,7 +126,7 @@ const Navbar = () => {
                 </button>
                 {showMobileJobSeekersDropdown && (
                   <div className="pl-6 space-y-1">
-                    <Link to="/job-board" className="block px-3 py-2 text-gray-700 hover:text-navy">
+                    <Link to="/jobs" className="block px-3 py-2 text-gray-700 hover:text-navy">
                       Job Board
                     </Link>
                     <Link to="/ask-a-question" className="block px-3 py-2 text-gray-700 hover:text-navy">
